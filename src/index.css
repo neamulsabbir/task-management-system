@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	background-color: #172227;
+	color: white;
+	font-family: Inter;
+}
+
+.container {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 1.25rem;
+	padding-left: 1.25rem;
+}
+
+@media (min-width: 640px) {
+	.container {
+		max-width: 640px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 768px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.container {
+		max-width: 1024px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.container {
+		max-width: 1280px;
+	}
+}
+
+@media (min-width: 1536px) {
+	.container {
+		max-width: 1536px;
+	}
+}
+@layer components {
+	.animate-updown {
+		animation-name: animate-updownAnim;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate-reverse;
+	}
+
+	@keyframes animate-updownAnim {
+		from {
+			transform: translateY(-20px);
+		}
+		to {
+			transform: translateY(20px);
+		}
+	}
+}
