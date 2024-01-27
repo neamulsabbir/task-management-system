@@ -1,22 +1,19 @@
 export const HeroSection = () => {
 	return (
-		<section className="bg-[radial-gradient(50%_50%_at_50%_50%,#17956D_0%,#0F684C_100%)] pt-32 pb-20 -mt-[92px] md:-mt-[118px]">
-			<div className="container">
-				<div className="grid md:grid-cols-2 items-center w-10/12 mx-auto">
-					<img
-						className="md:order-2 object-cover ml-auto animate-updown"
-						src="./images/hero-graphics.svg"
-						width="500px"
-						height="500px"
-						alt="Banner"
-					/>
+		<section className="pb-[114px] pt-20 md:mt-[100px]">
+			<div className="container lg:px-20">
+				<div className="grid items-center gap-6 md:grid-cols-2">
+					<div className="flex justify-center md:order-2">
+						<img className="max-md:w-full" src="./images/frame.png" width="326" height="290" alt="frame" />
+					</div>
 					<div>
-						<h1 className="text-4xl lg:text-[56px] font-bold leading-[1.1] mb-8">
-							The Future of Learning starts with students at the center
+						<h1 className="mb-1.5 text-[56px] font-bold leading-none text-[#F5BF42] lg:text-[73px]">
+							Tasker
 						</h1>
-						<a className="px-5 py-2.5 bg-[#038C61] rounded-[44px]" href="#">
-							Learn More
-						</a>
+						<p className="text-lg my-2 opacity-60">
+							Effortlessly Organize, Prioritize, and Conquer Tasks with Tasker - Your Personal
+							Productivity Ally for Seamless Goal Achievement and Stress-Free Task Management.
+						</p>
 					</div>
 				</div>
 			</div>

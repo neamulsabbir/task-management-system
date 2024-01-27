@@ -2,18 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
-	background-color: #172227;
+	background-color: #191d26;
 	color: white;
 	font-family: Inter;
+}
+
+@layer utilities {
+	td {
+		@apply p-0;
+	}
+
+	.container {
+		@apply px-4;
+	}
 }
 
 .container {
 	width: 100%;
 	margin-right: auto;
 	margin-left: auto;
-	padding-right: 1.25rem;
-	padding-left: 1.25rem;
 }
 
 @media (min-width: 640px) {
@@ -43,22 +56,5 @@ body {
 @media (min-width: 1536px) {
 	.container {
 		max-width: 1536px;
-	}
-}
-@layer components {
-	.animate-updown {
-		animation-name: animate-updownAnim;
-		animation-duration: 2s;
-		animation-iteration-count: infinite;
-		animation-direction: alternate-reverse;
-	}
-
-	@keyframes animate-updownAnim {
-		from {
-			transform: translateY(-20px);
-		}
-		to {
-			transform: translateY(20px);
-		}
 	}
 }
